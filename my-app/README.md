@@ -1,3 +1,3 @@
 
-## Deployed on Netify
+## Deployed on Netlify
 Check out the link: https://thinkwik-abhishek-kasaudhan.netlify.app/
