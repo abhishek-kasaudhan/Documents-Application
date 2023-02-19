@@ -58,4 +58,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ## Deployed on Netify
-Check out the link: https://thinkwik-abhi.netlify.app/
+Check out the link: https://thinkwik-abhishek-kasaudhan.netlify.app/
