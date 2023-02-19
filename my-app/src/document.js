@@ -8,8 +8,6 @@ import { addDocumentAction, deleteDocumentAction} from "./store";
 const Documents = () => {
     const [isAddDocumentOpen, setIsAddDocumentOpen] = useState(false);
     const [loading, setLoading]=useState(false)
-    const [loadingEdit, setLoadingEdit]=useState(false)
-    const [loadingDelete, setLoadingDelete]=useState(false)
 
     const dispatch = useDispatch();
     const navigate=useNavigate();
@@ -41,8 +39,8 @@ const Documents = () => {
           key: 'action',
           width: '33%',
           render: (_,record) => <div className="flex flex-row gap-[5px]">
-          <Button className="w-[100px] bg-[#EB5C55] font-bold text-white " loading={loadingEdit} onClick={() => handleOpenEditDocument(record)}>Edit</Button>
-          <Button className="w-[100px] bg-[#EB5C55] font-bold text-white " loading={loadingDelete} onClick={() => handleDeleteDocument(record.id)}>Delete</Button>
+          <Button className="w-[100px] bg-[#EB5C55] font-bold text-white " onClick={() => handleOpenEditDocument(record)}>Edit</Button>
+          <Button className="w-[100px] bg-[#EB5C55] font-bold text-white " onClick={() => handleDeleteDocument(record.id)}>Delete</Button>
           </div>
         },
       ];
@@ -55,10 +53,8 @@ const Documents = () => {
     
     
     const handleDeleteDocument = (id) => {
-        setLoadingDelete(true)
         setTimeout(
             () => {
-                setLoadingDelete(false) 
                 if (window.confirm('Are you sure you want to delete this document?')){dispatch(deleteDocumentAction(id));}
                 return (console.log('Delete'))},
             5000
@@ -66,10 +62,8 @@ const Documents = () => {
     };
     
     const handleOpenEditDocument = (document) => {
-        setLoadingEdit(true)
         setTimeout(
             () => {
-                setLoadingEdit(false) 
                 navigate(`/documents/${document.id}/edit`,{
                     state: {
                       document: document,
