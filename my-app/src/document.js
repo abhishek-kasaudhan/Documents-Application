@@ -33,7 +33,7 @@ const Documents = () => {
           width: '33%',
           render: (description) => <p>{description}</p>,
           defaultSortOrder: 'descend',
-          sorter: (a, b) => a.title.localeCompare(b.title),
+          sorter: (a, b) => a.description.localeCompare(b.description),
         },
         {
           title: 'Action',
