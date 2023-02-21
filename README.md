@@ -1,7 +1,6 @@
-## Deployed on Netlify
-Check out the link: https://thinkwik-abhishek-kasaudhan.netlify.app/
 
 Project Description-
+
 After starting the application,you will land on the homepage where you will find two buttons(Login & Signup).Clicking on any of the buttons will land up to the login or signup page.
 
 You can login by just entering some dummy character in email and password fields and after successful login you will redirect to the document page. 
@@ -16,6 +15,5 @@ Set a loader of 5 seconds for each of the actions like  login, signup, add/edit/
 
 You can log out from the header after the successful login and upon clicking on logout you will redirect to the home page.
 
-
-
-Tech Stack- React,redux,tailwind css,antd.
+## Deployed on Netlify
+Check out the link: https://thinkwik-abhishek-kasaudhan.netlify.app/
